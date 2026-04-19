@@ -18,8 +18,8 @@ For 3D work, this repo should also provide a consistent contract for Three.js an
 - Folder names and their responsibilities
 - Simple, reusable patterns
 - Composition-first APIs
-- Clear separation between tokens, components, blocks, and templates
-- Clear separation between tokens, components, blocks, templates, and 3D scene contracts
+- Clear separation between tokens, components, blocks, templates, examples, and 3D scene contracts
+- Reference implementations under `examples/` when a framework-specific example helps clarify the starter shape
 
 ## What Not To Do
 
