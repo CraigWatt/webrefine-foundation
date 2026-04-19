@@ -1,0 +1,148 @@
+---
+import { colors, motion, radius, shadow, spacing, typography } from '../../tokens';
+
+type Props = {
+  title?: string;
+  description?: string;
+};
+
+const {
+  title = 'WebRefine',
+  description = 'A brand-aware starter foundation for modern websites and apps.',
+} = Astro.props as Props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <style is:global>{`
+      :root {
+        --wf-ink: ${colors.ink};
+        --wf-ink-soft: ${colors.inkSoft};
+        --wf-paper: ${colors.paper};
+        --wf-paper-soft: ${colors.paperSoft};
+        --wf-line: ${colors.line};
+        --wf-accent: ${colors.accent};
+        --wf-accent-soft: ${colors.accentSoft};
+        --wf-signal: ${colors.signal};
+        --wf-signal-soft: ${colors.signalSoft};
+        --wf-font-sans: ${typography.fontSans};
+        --wf-font-serif: ${typography.fontSerif};
+        --wf-font-mono: ${typography.fontMono};
+        --wf-measure: ${typography.measure};
+        --wf-radius-sm: ${radius.sm};
+        --wf-radius-md: ${radius.md};
+        --wf-radius-lg: ${radius.lg};
+        --wf-radius-xl: ${radius.xl};
+        --wf-shadow-md: ${shadow.md};
+        --wf-shadow-lg: ${shadow.lg};
+        --wf-space-4: ${spacing[4]};
+        --wf-space-6: ${spacing[6]};
+        --wf-space-8: ${spacing[8]};
+        --wf-space-12: ${spacing[12]};
+        --wf-space-16: ${spacing[16]};
+        --wf-fast: ${motion.duration.fast};
+        --wf-normal: ${motion.duration.normal};
+        --wf-slow: ${motion.duration.slow};
+        --wf-ease: ${motion.easing.standard};
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: var(--wf-paper);
+        color: var(--wf-ink);
+        font-family: var(--wf-font-sans);
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background:
+          radial-gradient(circle at top right, rgba(22, 78, 99, 0.08), transparent 26%),
+          radial-gradient(circle at 20% 10%, rgba(180, 83, 9, 0.08), transparent 22%),
+          var(--wf-paper);
+      }
+
+      a {
+        color: inherit;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.18em;
+      }
+
+      a:hover {
+        color: var(--wf-accent);
+      }
+
+      .wf-shell {
+        width: min(1120px, calc(100vw - 2rem));
+        margin: 0 auto;
+      }
+
+      .wf-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1.25rem 0;
+      }
+
+      .wf-brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.625rem;
+        font-family: var(--wf-font-serif);
+        font-size: 1.1rem;
+        text-decoration: none;
+      }
+
+      .wf-mark {
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 999px;
+        background: linear-gradient(135deg, var(--wf-accent), var(--wf-signal));
+        box-shadow: 0 0 0 4px color-mix(in srgb, var(--wf-accent) 14%, transparent);
+      }
+
+      .wf-main {
+        padding: 2.25rem 0 4rem;
+      }
+
+      .wf-footer {
+        padding: 2rem 0 3rem;
+        color: var(--wf-ink-soft);
+      }
+    `}</style>
+  </head>
+  <body>
+    <div class="wf-shell">
+      <header class="wf-header">
+        <a class="wf-brand" href="/">
+          <span class="wf-mark" aria-hidden="true"></span>
+          <span>WebRefine</span>
+        </a>
+        <nav aria-label="Primary">
+          <a href="#services">Services</a>
+          <span aria-hidden="true">·</span>
+          <a href="#writing">Writing</a>
+          <span aria-hidden="true">·</span>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+      <main class="wf-main">
+        <slot />
+      </main>
+      <footer class="wf-footer">
+        <p>Brand-aware starter foundation with optional Astro and Next.js paths.</p>
+      </footer>
+    </div>
+  </body>
+</html>
