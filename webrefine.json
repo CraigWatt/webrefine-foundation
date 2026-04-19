@@ -1,0 +1,20 @@
+{
+  "name": "webrefine-foundation",
+  "version": "0.1.0",
+  "type": "foundation",
+  "status": "documentation-first",
+  "supportedStarters": ["nextjs", "astro"],
+  "paths": {
+    "tokens": "./tokens",
+    "components": "./components",
+    "blocks": "./blocks",
+    "templates": "./templates",
+    "docs": "./docs"
+  },
+  "aiGuidance": "./docs/ai-guidance.md",
+  "rules": [
+    "Prefer simple, composable defaults.",
+    "Do not invent undocumented patterns.",
+    "Keep starter structure framework-agnostic unless a template says otherwise."
+  ]
+}

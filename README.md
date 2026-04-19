@@ -1,101 +1,61 @@
 # WebRefine Foundation
 
-**WebRefine Foundation** is a reusable UI and application foundation for building modern web apps and websites.
+WebRefine Foundation is a starter foundation for building modern web apps and websites with a consistent design system, reusable patterns, and AI-friendly project structure.
 
-It provides a consistent starting point across projects by standardising design tokens, component patterns, layout structures, and developer workflows.
+This repository is intentionally lightweight for now. It defines the contract for future starters and foundations before the implementation grows.
 
----
+## Current State
 
-## 🎯 Purpose
+- Documentation-first foundation
+- No runtime package yet
+- No generated starters yet
+- Intended to become the base for framework-specific starters such as Next.js and Astro
 
-Building new web projects often involves repeating the same setup:
+## What This Repo Provides
 
-- styling systems (Tailwind, themes, tokens)
-- layout shells (navigation, containers, sections)
-- base components (buttons, cards, forms)
-- structure and conventions
+- Design tokens and theme guidance
+- Reusable component patterns
+- Higher-level UI blocks and sections
+- Starter conventions for project structure and naming
+- AI guidance for scaffold generation and extension
 
-WebRefine Foundation exists to remove that repetition and provide a **clean, consistent baseline** for new projects.
+## How To Use It
 
----
+1. Read `webrefine.json` to understand the repository contract.
+2. Read `docs/ai-guidance.md` before generating or extending anything.
+3. Use the folders in `tokens/`, `components/`, `blocks/`, and `templates/` as the source of truth for future starters.
 
-## 🧱 What this will include
+## Repository Structure
 
-This repository is intended to evolve into a foundation layer containing:
+```text
+tokens/        design tokens and theme definitions
+components/    reusable UI components and reference implementations
+blocks/        higher-level UI sections and patterns
+templates/     framework starter templates
+docs/          usage notes and AI guidance
+```
 
-### Design System
-- colour tokens (light/dark)
-- typography
-- spacing scale
-- radius, shadows, motion
+## AI Starter Contract
 
-### Components (reference implementations)
-- buttons, inputs, cards
-- navigation patterns
-- layout primitives (containers, sections)
+If an AI agent is working in this repo, it should:
 
-### Blocks
-- reusable UI sections (hero, grids, auth, dashboards)
-- marketing and application patterns
+- preserve the documented naming and folder conventions
+- prefer composition and simple defaults
+- avoid inventing new patterns when an existing one is documented
+- treat `docs/ai-guidance.md` as the behavioral guide
 
-### Starter Conventions
-- project structure
-- naming conventions
-- layout patterns
-- theming approach
+## Planned Expansion
 
----
+The next useful additions are:
 
-## 🧩 How it is used
+- a minimal token set in `tokens/`
+- one or two reference components in `components/`
+- a single starter template in `templates/nextjs/`
+- a small example app showing how the pieces fit together
 
-WebRefine Foundation is **not a traditional component library**.
+## Philosophy
 
-Instead, it supports a **starter-first workflow**:
-
-1. Create a new project using a WebRefine starter (e.g. Next.js or Astro)
-2. Inherit the design system, structure, and base components
-3. Build application-specific features on top
-
----
-
-## 🗂️ Future structure
-tokens/        # design tokens and theme definitions
-components/    # reusable UI components (reference)
-blocks/        # higher-level UI patterns and sections
-templates/     # framework starters (Next.js, Astro, etc)
-docs/          # usage guidelines and examples
-
----
-
-## 🚧 Status
-
-This is an evolving foundation.
-
-The goal is not to be perfect or complete, but to:
-- reduce setup time for new projects
-- maintain consistency across repositories
-- improve over time through real usage
-
----
-
-## 💡 Philosophy
-
-- Own your components — avoid heavy lock-in to UI libraries  
-- Prefer composition over large frameworks  
-- Start simple, evolve naturally  
-- Optimise for real usage, not theoretical completeness  
-
----
-
-## 🔗 Related (planned)
-
-- webrefine-next-starter
-- webrefine-astro-starter
-- webrefine-ui (optional)
-- webrefine-docs
-
----
-
-## 👤 Author
-
-Built and maintained as part of the WebRefine ecosystem.
+- Own your components rather than hard-locking to a UI library
+- Prefer composition over abstraction for its own sake
+- Start small, then evolve from real usage
+- Optimize for clarity and repeatability
