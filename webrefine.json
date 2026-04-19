@@ -14,8 +14,11 @@
     "components": "./components",
     "blocks": "./blocks",
     "templates": "./templates",
+    "examples": "./examples",
     "docs": "./docs"
   },
+  "foundationShape": "./docs/foundation-shape.md",
+  "designMeta": "./docs/design-meta.md",
   "aiGuidance": "./docs/ai-guidance.md",
   "rules": [
     "Prefer simple, composable defaults.",
