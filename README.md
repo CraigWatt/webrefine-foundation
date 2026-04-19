@@ -25,8 +25,10 @@ This repository is intentionally lightweight for now. It defines the contract fo
 
 1. Read `webrefine.json` to understand the repository contract.
 2. Read `docs/ai-guidance.md` before generating or extending anything.
-3. Read `docs/r3f-foundation.md` if you are generating a Three.js or animated canvas starter.
-4. Use the folders in `tokens/`, `components/`, `blocks/`, `templates/`, and `examples/` as the source of truth for future starters.
+3. Read `docs/foundation-shape.md` for the product shape and scope.
+4. Read `docs/design-meta.md` for the visual and structural point of view of the system.
+5. Read `docs/r3f-foundation.md` if you are generating a Three.js or animated canvas starter.
+6. Use the folders in `tokens/`, `components/`, `blocks/`, `templates/`, and `examples/` as the source of truth for future starters.
 
 ## Repository Structure
 
@@ -47,6 +49,8 @@ If an AI agent is working in this repo, it should:
 - prefer composition and simple defaults
 - avoid inventing new patterns when an existing one is documented
 - treat `docs/ai-guidance.md` as the behavioral guide
+- treat `docs/foundation-shape.md` as the scope and packaging guide
+- treat `docs/design-meta.md` as the visual tone guide
 
 ## Planned Expansion
 

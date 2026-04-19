@@ -12,6 +12,8 @@ For 3D work, this repo should also provide a consistent contract for Three.js an
 
 - `README.md`
 - `webrefine.json`
+- `docs/foundation-shape.md`
+- `docs/design-meta.md`
 
 ## What To Preserve
 
@@ -34,6 +36,8 @@ For 3D work, this repo should also provide a consistent contract for Three.js an
 - Keep examples aligned with the documented structure
 - If a template is missing, document the intended shape before inventing one
 - Use the repository manifest as the source of truth for paths and supported starters
+- Use `docs/foundation-shape.md` as the source of truth for product shape and scope
+- Use `docs/design-meta.md` as the source of truth for visual posture and starter tone
 - Use `docs/r3f-foundation.md` as the source of truth for canvas and animation starters
 
 ## Suggested Build Order
