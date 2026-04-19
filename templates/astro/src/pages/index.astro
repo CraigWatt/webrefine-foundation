@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import FeatureCard from '../components/FeatureCard.astro';
+---
+
+<BaseLayout
+  title="WebRefine Starter"
+  description="A minimal Astro starter for brand-aware sites."
+>
+  <main class="wf-page">
+    <Hero
+      eyebrow="Astro starter"
+      title="A calm, branded foundation for a serious web presence."
+      body="Use this starter when you want editorial pacing, technical clarity, and a foundation that stays simple under real content."
+    />
+
+    <section id="services" class="wf-grid">
+      <FeatureCard
+        title="Clear structure"
+        body="Sections and hierarchy are set up to make the page understandable before the polish comes in."
+      />
+      <FeatureCard
+        title="Composable primitives"
+        body="Layout pieces stay thin so you can swap tone and content without rewriting the base system."
+      />
+      <FeatureCard
+        title="Optional motion"
+        body="Animation and canvas enhancements should support attention, not compete with the page."
+      />
+    </section>
+
+    <section id="writing" class="wf-copy">
+      <h2>Built for content-led brands</h2>
+      <p>
+        This starter assumes the writing is part of the product. It gives you a shell that can hold essays,
+        service pages, and case studies without needing a heavy application layer.
+      </p>
+    </section>
+
+    <section id="contact" class="wf-copy">
+      <h2>Designed to convert the right visitors</h2>
+      <p>
+        Keep the calls to action direct, the language precise, and the visual system restrained.
+        That makes the foundation easy to extend and easier to trust.
+      </p>
+    </section>
+  </main>
+</BaseLayout>

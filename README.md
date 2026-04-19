@@ -8,7 +8,7 @@ This repository is intentionally lightweight for now. It defines the contract fo
 
 - Documentation-first foundation with a small runtime/package scaffold
 - Shared R3F primitives and reference scenes are present
-- No generated starters yet
+- An Astro starter skeleton now exists under `templates/astro/`
 - Intended to become the base for framework-specific starters such as Next.js and Astro
 
 ## What This Repo Provides
@@ -56,9 +56,8 @@ If an AI agent is working in this repo, it should:
 
 The next useful additions are:
 
-- a minimal token set in `tokens/`
 - more reference components and hooks in `components/`
-- a generated starter template package for `templates/nextjs/` and `templates/astro/`
+- a mirrored Next.js starter once the Astro starter is validated
 - framework-specific examples that mirror the generated starter output
 - tokens and scene styling conventions for richer Three.js animations
 

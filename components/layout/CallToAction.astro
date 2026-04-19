@@ -1,0 +1,10 @@
+---
+type Props = {
+  label: string;
+  href: string;
+};
+
+const { label, href } = Astro.props as Props;
+---
+
+<a class="wf-cta" href={href}>{label}</a>

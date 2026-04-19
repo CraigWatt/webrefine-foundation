@@ -10,3 +10,8 @@ Planned contents:
 - dashboard sections
 - marketing patterns
 
+Current intent:
+
+- keep blocks thin and composable
+- build them from shared tokens and components
+- let the Astro starter consume them without framework-specific coupling
