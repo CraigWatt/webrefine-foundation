@@ -2,7 +2,7 @@
 
 WebRefine Foundation is a starter foundation for building modern web apps and websites with a consistent design system, reusable patterns, and AI-friendly project structure.
 
-This repository is intentionally lightweight for now. It defines the contract for future starters and foundations before the implementation grows.
+This repository is intentionally lightweight for now. It defines the contract for future starters and foundations before the implementation grows, including a Three.js / React Three Fiber path for animated canvas experiences.
 
 ## Current State
 
@@ -18,12 +18,14 @@ This repository is intentionally lightweight for now. It defines the contract fo
 - Higher-level UI blocks and sections
 - Starter conventions for project structure and naming
 - AI guidance for scaffold generation and extension
+- Three.js canvas foundations for React Three Fiber
 
 ## How To Use It
 
 1. Read `webrefine.json` to understand the repository contract.
 2. Read `docs/ai-guidance.md` before generating or extending anything.
-3. Use the folders in `tokens/`, `components/`, `blocks/`, and `templates/` as the source of truth for future starters.
+3. Read `docs/r3f-foundation.md` if you are generating a Three.js or animated canvas starter.
+4. Use the folders in `tokens/`, `components/`, `blocks/`, and `templates/` as the source of truth for future starters.
 
 ## Repository Structure
 
@@ -50,8 +52,9 @@ The next useful additions are:
 
 - a minimal token set in `tokens/`
 - one or two reference components in `components/`
-- a single starter template in `templates/nextjs/`
+- a single starter template in `templates/nextjs/` or `templates/astro/`
 - a small example app showing how the pieces fit together
+- a Three.js / React Three Fiber scene contract and starter pattern
 
 ## Philosophy
 
